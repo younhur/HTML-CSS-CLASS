@@ -1,9 +1,12 @@
 .challenge2 {
-  padding: 10%;    
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 120px;
+  padding-right: 5%;    
   background-color: #fff;
   background-image: 
       linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), 
-      linear-gradient(#eee .1em, transparent .1em); /* 👈 이 끝에 세미콜론(;)을 붙여주어야 안전합니다 */
+      linear-gradient(#eee .1em, transparent .1em); 
   background-size: 100% 1.2em;
 }
 h1 {
