@@ -1,29 +1,24 @@
-.challenge2 {
-    padding: 10%;    
-    background-color: #fff;
-    background-image: 
-        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), 
-        linear-gradient(#eee .1em, transparent .1em);
-    background-size: 100% 1.2em;
-}
-h1 {
-    color: #9b59b6;
-}
-h1::before {
-    content: "Topic: ";
-}
-h1:first-of-type {
-    text-align: center;
-}
-p {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-    font-style: italic;
-}
-.sub-header {
-    color: #2980b9;
-}
-p::first-letter {
-    font-size: 200%;
-    color: #2980b9;
-}
+.box {
+    border: 50px solid #e74c3c; /* Flat UI Colors의 Alizarin 빨간색 */
+    width: 200px;
+    height: 200px; /* 정사각형 모양을 위해 높이도 맞춰주었습니다 */
+    padding: 50px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .green {
+    background-color: #2ecc71; 
+    border-color: #2ecc71;    
+    
+        visibility: hidden; 
+  }  
+  
+  .blue {
+    background-color: #3498db; /
+    border-color: #3498db;    
+  }
