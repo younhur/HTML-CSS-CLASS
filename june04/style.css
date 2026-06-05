@@ -120,15 +120,9 @@ body {
     bottom: 0px;
     background: #f2f2f2;
     width: 100%;
+    box-sizing: border-box;
   }
   
-  .first-line {
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.54);
-    text-align: left;
-  }
   
   .second-line {
     padding: 15px 30px;
