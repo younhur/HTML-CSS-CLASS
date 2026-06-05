@@ -1,0 +1,99 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-top: 60px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+  }
+  
+  .box-gray {
+    background-color: #3c3c3c;
+  }
+  
+  .mr-5 {
+    margin-right: 5px;
+  }
+  
+  .ml-250 {
+    margin-left: 250px;
+  }
+  
+  .ml-500 {
+    margin-left: 500px;
+  }
+  
+  .challenge1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .challenge1 .sub-main {
+    display: flex;
+  }
+  
+  .challenge2 {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+  
+  .challenge3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .outer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  
+  .challenge4 {
+    height: 350px;
+  }
+  
+  .relative-box {
+    position: relative;
+    top: -100px;
+    left: 100px;
+  }
+  
+  .challenge5 {
+    height: 500px;
+  }
+  
+  .parent-box {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #3c3c3c;
+    color: white;
+    margin: 100px auto 0;
+    overflow: hidden;
+  }
+  
+  .abs-box2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .abs-box3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
