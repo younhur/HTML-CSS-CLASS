@@ -1,232 +1,448 @@
-/* 기본 설정 */
-body {
-  font-family: 'DM Sans', sans-serif;
-  color: #1a1a1a;
-}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCULIS — Premium Eyewear</title>
 
-/* 공지 바 */
-.announcement-bar {
-  background: #1a1a1a;
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-}
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
-/* 네비게이션 */
-#mainNav {
-  background: rgba(255, 255, 255, 0.97);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 16px 0;
-}
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-.logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: #1a1a1a !important;
-  text-decoration: none;
-}
+    <!-- 공지 바 -->
+    <div class="announcement-bar text-center py-2">
+      <small>무료 배송 · 30일 무료 반품 · 전국 당일 배송 가능</small>
+    </div>
 
-.nav-link {
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  color: #1a1a1a !important;
-}
+    <!-- 네비게이션 -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">OCULIS</a>
 
-.nav-icon {
-  color: #1a1a1a;
-  font-size: 1.1rem;
-  text-decoration: none;
-}
+        <button class="navbar-toggler border-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
 
-/* 히어로 */
-.hero-slide {
-  height: 90vh;
-  min-height: 500px;
-}
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="#collection">컬렉션</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">신상품</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sale">세일</a></li>
+            <li class="nav-item"><a class="nav-link" href="#brand">브랜드</a></li>
+          </ul>
+          <div class="d-flex gap-3 align-items-center">
+            <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+            <a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
+            <a href="#" class="nav-icon">
+              <i class="bi bi-bag"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-.slide-1 { background: #f0ede8; }
-.slide-2 { background: #e8eaed; }
-.slide-3 { background: #ede8e3; }
+    <!-- 히어로 캐러셀 -->
+    <section id="hero">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
 
-.hero-sub {
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6b6b6b;
-  margin-bottom: 16px;
-}
+          <div class="carousel-item active hero-slide slide-1">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="hero-text">
+                <p class="hero-sub">2025 Spring Collection</p>
+                <h1 class="hero-title">보는 것이<br/>곧 스타일</h1>
+                <a href="#products" class="btn btn-outline-dark btn-lg mt-4 rounded-0">컬렉션 보기</a>
+              </div>
+            </div>
+          </div>
 
-.hero-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 7vw, 6rem);
-  font-weight: 300;
-  line-height: 1.1;
-}
+          <div class="carousel-item hero-slide slide-2">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="hero-text">
+                <p class="hero-sub">Limited Edition</p>
+                <h1 class="hero-title">선글라스<br/>여름 한정판</h1>
+                <a href="#sale" class="btn btn-dark btn-lg mt-4 rounded-0">지금 쇼핑</a>
+              </div>
+            </div>
+          </div>
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 48px;
-}
+          <div class="carousel-item hero-slide slide-3">
+            <div class="container h-100 d-flex align-items-center justify-content-end">
+              <div class="hero-text text-end">
+                <p class="hero-sub">Premium Brand</p>
+                <h1 class="hero-title">당신의 얼굴을<br/>완성하다</h1>
+                <a href="#brand" class="btn btn-outline-dark btn-lg mt-4 rounded-0">브랜드 스토리</a>
+              </div>
+            </div>
+          </div>
 
-.carousel-indicators button {
-  background-color: #1a1a1a !important;
-  width: 24px !important;
-  height: 2px !important;
-}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left fs-3 text-dark"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <i class="bi bi-chevron-right fs-3 text-dark"></i>
+        </button>
+      </div>
+    </section>
 
-/* 섹션 공통 */
-.section-sub {
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #b8975a;
-  margin-bottom: 8px;
-}
+    <!-- 카테고리 -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-sub">SHOP BY CATEGORY</p>
+          <h2 class="section-title">카테고리</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="category-card">
+              <i class="bi bi-eyeglasses fs-2 mb-3 d-block"></i>
+              <p>안경</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="category-card">
+              <i class="bi bi-sunglasses fs-2 mb-3 d-block"></i>
+              <p>선글라스</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="category-card">
+              <i class="bi bi-brightness-high fs-2 mb-3 d-block"></i>
+              <p>블루라이트</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="category-card">
+              <i class="bi bi-tools fs-2 mb-3 d-block"></i>
+              <p>액세서리</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
-}
+    <!-- 신상품 -->
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-sub">NEW ARRIVALS</p>
+          <h2 class="section-title">신상품</h2>
+        </div>
 
-/* 카테고리 */
-.category-card {
-  border: 1px solid #e8e8e8;
-  padding: 32px 16px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s;
-  background: #fff;
-}
+        <div class="row g-4">
 
-.category-card:hover {
-  background: #1a1a1a;
-  color: #fff;
-  border-color: #1a1a1a;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-1">
+                <span class="badge bg-dark product-badge">NEW</span>
+              </div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Classic Round Frame</h6>
+                <p class="product-price">₩189,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.category-card p {
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  margin: 0;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-2">
+                <span class="badge bg-danger product-badge">SALE</span>
+              </div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Slim Square Titanium</h6>
+                <p class="product-price">
+                  <span class="text-decoration-line-through text-muted me-1">₩240,000</span>₩168,000
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-/* 상품 */
-.product-img {
-  width: 100%;
-  height: 260px;
-  position: relative;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-3"></div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Vintage Cat Eye</h6>
+                <p class="product-price">₩215,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.bg-1 { background: linear-gradient(135deg, #d4c9bc, #c9bfb3); }
-.bg-2 { background: linear-gradient(135deg, #c5cdd6, #b8c4ce); }
-.bg-3 { background: linear-gradient(135deg, #d6cac5, #c9bfba); }
-.bg-4 { background: linear-gradient(135deg, #c9c4a8, #c0ba98); }
-.bg-5 { background: linear-gradient(135deg, #dde0e3, #d3d7db); }
-.bg-6 { background: linear-gradient(135deg, #2a2a2a, #3a3a3a); }
-.bg-7 { background: linear-gradient(135deg, #c8a882, #b89262); }
-.bg-8 { background: linear-gradient(135deg, #e8e8e8, #d8d8d8); }
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-4">
+                <span class="badge product-badge" style="background:#b8975a;">LIMITED</span>
+              </div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS x SEOUL</p>
+                <h6 class="product-name">Gold Edition Aviator</h6>
+                <p class="product-price">₩320,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-@media (max-width: 576px) {
-  .product-img { height: 180px; }
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-5"></div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Minimal Oval Clear</h6>
+                <p class="product-price">₩155,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.product-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  border-radius: 0 !important;
-  padding: 4px 8px;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-6">
+                <span class="badge bg-dark product-badge">NEW</span>
+              </div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Bold Wayfarer Black</h6>
+                <p class="product-price">₩198,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.product-brand {
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #b8975a;
-  margin-bottom: 4px;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-7">
+                <span class="badge bg-danger product-badge">SALE</span>
+              </div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Tortoise Shell Round</h6>
+                <p class="product-price">
+                  <span class="text-decoration-line-through text-muted me-1">₩178,000</span>₩124,000
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.product-name {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 6px;
-}
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <div class="product-img bg-8"></div>
+              <div class="mt-3">
+                <p class="product-brand">OCULIS</p>
+                <h6 class="product-name">Rimless Titanium Pro</h6>
+                <p class="product-price">₩278,000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-0 w-100">담기</a>
+              </div>
+            </div>
+          </div>
 
-.product-price {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
+        </div>
 
-/* 세일 배너 */
-.sale-banner {
-  background: #1a1a1a;
-  padding: 80px 0;
-}
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-dark rounded-0 px-5">전체 상품 보기</a>
+        </div>
+      </div>
+    </section>
 
-.sale-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 300;
-  line-height: 1.2;
-}
+    <!-- 세일 배너 -->
+    <section id="sale" class="sale-banner py-5">
+      <div class="container text-center text-white">
+        <p class="section-sub text-white opacity-75">LIMITED TIME OFFER</p>
+        <h2 class="sale-title mb-3">여름 세일<br/><span>최대 40% 할인</span></h2>
+        <p class="mb-4 opacity-75">2025년 6월 30일까지 · 일부 상품 제외</p>
+        <a href="#products" class="btn btn-light btn-lg rounded-0 px-5">지금 쇼핑하기</a>
+      </div>
+    </section>
 
-.sale-title span { color: #b8975a; }
+    <!-- 서비스 특징 -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <i class="bi bi-truck fs-2 mb-3 d-block" style="color:#b8975a;"></i>
+            <h6>무료 배송</h6>
+            <p class="text-muted small">5만원 이상 구매 시</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-arrow-return-left fs-2 mb-3 d-block" style="color:#b8975a;"></i>
+            <h6>30일 반품</h6>
+            <p class="text-muted small">조건 없는 무료 반품</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-shield-check fs-2 mb-3 d-block" style="color:#b8975a;"></i>
+            <h6>2년 보증</h6>
+            <p class="text-muted small">모든 제품 품질 보장</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-headset fs-2 mb-3 d-block" style="color:#b8975a;"></i>
+            <h6>전문 상담</h6>
+            <p class="text-muted small">안경사 1:1 상담 서비스</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* 브랜드 스토리 */
-.brand-img {
-  width: 100%;
-  height: 480px;
-  background: linear-gradient(160deg, #d4c9bc, #c0b8ad);
-}
+    <!-- 브랜드 스토리 -->
+    <section id="brand" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <div class="brand-img"></div>
+          </div>
+          <div class="col-md-6">
+            <p class="section-sub">OUR STORY</p>
+            <h2 class="section-title mb-4">완벽한 안경을<br/>찾는 여정</h2>
+            <p class="text-muted">OCULIS는 2018년 서울에서 시작된 프리미엄 아이웨어 브랜드입니다. 보는 것의 즐거움과 스타일의 자유를 동시에 추구합니다.</p>
+            <p class="text-muted">모든 프레임은 최고급 소재와 정교한 장인 정신으로 제작되며, 당신의 얼굴 위에서 완성됩니다.</p>
+            <div class="row mt-4 g-3 text-center">
+              <div class="col-4">
+                <h3 class="brand-stat">500+</h3>
+                <p class="small text-muted">스타일</p>
+              </div>
+              <div class="col-4">
+                <h3 class="brand-stat">50K+</h3>
+                <p class="small text-muted">고객</p>
+              </div>
+              <div class="col-4">
+                <h3 class="brand-stat">7년</h3>
+                <p class="small text-muted">역사</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.brand-stat {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
-  color: #b8975a;
-  font-weight: 400;
-}
+    <!-- 고객 후기 -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-sub">REVIEWS</p>
+          <h2 class="section-title">고객 후기</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="review-card p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="text-muted">"처음 써본 티타늄 프레임인데 정말 가벼워서 놀랐어요. 디자인도 세련되고 가격 대비 완벽합니다."</p>
+              <p class="fw-500 mt-3 mb-0">— 김지수, 서울</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review-card p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="text-muted">"선글라스 여러 개 써봤지만 OCULIS가 제일 맘에 들어요. 자외선 차단도 완벽하고 얼굴에 딱 맞아요."</p>
+              <p class="fw-500 mt-3 mb-0">— 박민준, 부산</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review-card p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+              </div>
+              <p class="text-muted">"배송도 빠르고 포장도 고급스럽네요. 선물로 받은 친구도 너무 좋아했습니다."</p>
+              <p class="fw-500 mt-3 mb-0">— 이수현, 대전</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* 고객 후기 */
-.review-card {
-  border: 1px solid #e8e8e8;
-}
+    <!-- 푸터 -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h4 class="logo mb-3">OCULIS</h4>
+            <p class="text-muted small">보는 것이 곧 스타일.<br/>프리미엄 아이웨어의 새로운 기준.</p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading">쇼핑</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">안경</a></li>
+              <li><a href="#" class="footer-link">선글라스</a></li>
+              <li><a href="#" class="footer-link">블루라이트</a></li>
+              <li><a href="#" class="footer-link">액세서리</a></li>
+              <li><a href="#" class="footer-link">세일</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading">고객 지원</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">주문 조회</a></li>
+              <li><a href="#" class="footer-link">반품/교환</a></li>
+              <li><a href="#" class="footer-link">매장 찾기</a></li>
+              <li><a href="#" class="footer-link">1:1 문의</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading">회사 정보</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">브랜드 스토리</a></li>
+              <li><a href="#" class="footer-link">채용</a></li>
+              <li><a href="#" class="footer-link">제휴 문의</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading">고객센터</h6>
+            <p class="small text-muted">1588-0000</p>
+            <p class="small text-muted">평일 09:00 — 18:00</p>
+            <p class="small text-muted">hello@oculis.kr</p>
+          </div>
+        </div>
+        <hr class="mt-5 mb-3" />
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <p class="small text-muted mb-2 mb-md-0">© 2025 OCULIS. All rights reserved.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-link small">개인정보처리방침</a>
+            <a href="#" class="footer-link small">이용약관</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-/* 푸터 */
-.footer {
-  background: #fff;
-  border-top: 1px solid #e8e8e8;
-}
-
-.footer-heading {
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.footer-link {
-  display: block;
-  color: #6b6b6b;
-  text-decoration: none;
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
-.footer-link:hover { color: #1a1a1a; }
-
-.social-icon {
-  color: #6b6b6b;
-  font-size: 1.1rem;
-  text-decoration: none;
-}
-
-.social-icon:hover { color: #1a1a1a; }
-
-/* 유틸리티 */
-.fw-500 { font-weight: 500; }
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
