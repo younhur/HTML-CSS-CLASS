@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COALNU — Premium Eyewear</title>
-
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,24 +20,21 @@
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand logo" href="#">COALNU</a>
-
         <button class="navbar-toggler border-0" type="button"
           data-bs-toggle="collapse" data-bs-target="#navMenu">
           <i class="bi bi-list fs-4"></i>
         </button>
-
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav mx-auto gap-lg-4">
             <li class="nav-item"><a class="nav-link" href="#collection">컬렉션</a></li>
             <li class="nav-item"><a class="nav-link" href="#products">신상품</a></li>
             <li class="nav-item"><a class="nav-link" href="#brand">브랜드</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           </ul>
           <div class="d-flex gap-3 align-items-center">
             <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
             <a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
-            <a href="#" class="nav-icon">
-              <i class="bi bi-bag"></i>
-            </a>
+            <a href="#" class="nav-icon"><i class="bi bi-bag"></i></a>
           </div>
         </div>
       </div>
@@ -57,7 +49,6 @@
           <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
-
           <div class="carousel-item active hero-slide slide-1">
             <div class="container h-100 d-flex align-items-center">
               <div class="hero-text">
@@ -67,7 +58,6 @@
               </div>
             </div>
           </div>
-
           <div class="carousel-item hero-slide slide-2">
             <div class="container h-100 d-flex align-items-center">
               <div class="hero-text">
@@ -77,7 +67,6 @@
               </div>
             </div>
           </div>
-
           <div class="carousel-item hero-slide slide-3">
             <div class="container h-100 d-flex align-items-center justify-content-end">
               <div class="hero-text text-end">
@@ -87,7 +76,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
           <i class="bi bi-chevron-left fs-3 text-dark"></i>
@@ -141,9 +129,7 @@
           <p class="section-sub">NEW ARRIVALS</p>
           <h2 class="section-title">신상품</h2>
         </div>
-
         <div class="row g-4">
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-1">
@@ -157,7 +143,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-2">
@@ -173,7 +158,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-3"></div>
@@ -185,7 +169,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-4">
@@ -199,7 +182,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-5"></div>
@@ -211,7 +193,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-6">
@@ -225,7 +206,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-7">
@@ -241,7 +221,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-3">
             <div class="product-card">
               <div class="product-img bg-8"></div>
@@ -253,9 +232,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="text-center mt-5">
           <a href="#" class="btn btn-outline-dark rounded-0 px-5">전체 상품 보기</a>
         </div>
@@ -287,6 +264,93 @@
                 <h3 class="brand-stat">7년</h3>
                 <p class="small text-muted">역사</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-sub">FAQ</p>
+          <h2 class="section-title">자주 묻는 질문</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed faq-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                    도수 렌즈도 맞출 수 있나요?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body">
+                    네, 모든 안경 프레임에 도수 렌즈 맞춤 서비스를 제공합니다. 처방전을 업로드하시면 전문 안경사가 검토 후 제작해 드립니다.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed faq-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                    배송은 얼마나 걸리나요?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body">
+                    일반 제품은 1~3일, 도수 렌즈 맞춤 제품은 5~7일 소요됩니다. 서울 및 수도권은 당일 배송도 가능합니다.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed faq-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                    가상 피팅 서비스가 있나요?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body">
+                    네! 앱에서 AR 가상 피팅 기능을 제공합니다. 구매 전 내 얼굴에 어울리는지 미리 확인해보세요.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed faq-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                    교환 및 반품 정책은 어떻게 되나요?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body">
+                    수령 후 30일 이내 미착용 제품은 무료 반품 및 교환이 가능합니다. 단, 도수 렌즈 맞춤 제품은 제조 특성상 반품이 어렵습니다.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed faq-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                    프레임 소재는 어떤 것이 있나요?
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body">
+                    티타늄, 아세테이트, 스테인리스, 베타 티타늄 등 다양한 소재로 제작됩니다. 각 소재의 특징은 상품 상세 페이지에서 확인하실 수 있습니다.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -341,7 +405,6 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

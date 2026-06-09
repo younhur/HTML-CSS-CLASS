@@ -177,6 +177,42 @@ body {
     font-weight: 400;
   }
   
+  /* FAQ */
+  .faq-item {
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 0 !important;
+  }
+  
+  .faq-button {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1a1a1a;
+    background: transparent;
+    padding: 20px 0;
+    box-shadow: none !important;
+  }
+  
+  .faq-button:not(.collapsed) {
+    color: #b8975a;
+    background: transparent;
+  }
+  
+  .faq-button::after {
+    filter: none;
+  }
+  
+  .faq-button:not(.collapsed)::after {
+    filter: none;
+  }
+  
+  .faq-body {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.8;
+    padding: 0 0 20px 0;
+  }
+  
   /* 푸터 */
   .footer {
     background: #fff;
